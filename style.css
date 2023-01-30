@@ -183,9 +183,6 @@ a {
 .nav-link:hover a {
   color: var(--clr-primary-400);
 }
-.nav-link:active a {
-  color: var(--clr-primary-400);
-}
 
 /* MAIN */
 main {
@@ -203,7 +200,6 @@ main {
 .art-container {
   box-sizing: border-box;
   background-color: var(--clr-accent-300);
-
   min-width: 25rem;
   margin: 0.625rem;
   padding: 1.5rem;
@@ -221,10 +217,11 @@ main {
   width: 100%;
   height: 0.5rem;
   background: var(--clr-accent-500);
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .art-header {
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -242,10 +239,28 @@ main {
 }
 
 .art-content {
-  font-size: var(--fs-300);
+  font-size: var(--fs-400);
+  margin-top: 0.3rem;
   display: none;
+  font-style: italic;
+  text-transform: capitalize;
+}
 
-  /* transform: translateY(-100%); */
+.actor-name {
+  font-weight: bold;
+  font-style: italic;
+  /* margin-bottom: 0.5rem; */
+}
+
+#series-nmbr {
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+p {
+  margin-top: 0.5rem;
+  font-size: var(--fs-300);
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* show-hide text */
@@ -265,6 +280,7 @@ main {
 .show-text .down-icon {
   display: none;
 }
+.show-text 
 
 /* fixed position */
 
@@ -277,3 +293,15 @@ main {
 .fixed + main {
   margin-top: 3.75rem;
 }
+
+@media screen and (max-width: 700px) {
+  .container-center {
+    flex-direction: column;
+  }
+  .art-container {
+    min-width: 15rem;
+  }
+  .logo-container {
+    max-width: 15rem;
+  }
+} ;
