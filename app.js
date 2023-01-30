@@ -1,6 +1,7 @@
 // ===variables===
 const artBtns = document.querySelectorAll(".art-btn");
-const 
+const bars = document.querySelector(".bars-icon");
+const navbar = document.querySelector(".nav");
 // ===dropdown text===
 artBtns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
@@ -21,4 +22,10 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("fixed");
   }
+});
+
+// ===dropdown menu===
+
+bars.addEventListener("click", function () {
+  navbar.classList.toggle("show-list");
 });

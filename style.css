@@ -327,7 +327,7 @@ p {
   .bars-icon {
     display: flex;
   }
-  .show-list {
+  .show-list .nav-list {
     display: flex;
   }
 } ;
