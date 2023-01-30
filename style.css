@@ -159,6 +159,8 @@ header {
 nav {
   width: 100%;
   background-color: var(--clr-primary-400);
+  /* display: flex;
+  justify-content: flex-end; */
 }
 .nav-list {
   height: 100%;
@@ -183,11 +185,23 @@ a {
 .nav-link:hover a {
   color: var(--clr-primary-400);
 }
+.bars-icon {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+.fa-bars:hover {
+  rotate: 180deg;
+  transition: var(--transition);
+}
 
 /* MAIN */
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .container-center {
@@ -249,7 +263,6 @@ main {
 .actor-name {
   font-weight: bold;
   font-style: italic;
-  /* margin-bottom: 0.5rem; */
 }
 
 #series-nmbr {
@@ -272,7 +285,6 @@ p {
 }
 .show-text .art-content {
   display: block;
-  /* transform: translateY(100%); */
 }
 .show-text .up-icon {
   display: block;
@@ -280,7 +292,6 @@ p {
 .show-text .down-icon {
   display: none;
 }
-.show-text 
 
 /* fixed position */
 
@@ -303,5 +314,20 @@ p {
   }
   .logo-container {
     max-width: 15rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .nav-list {
+    flex-direction: column;
+    padding-left: 0;
+    display: none;
+  }
+
+  .bars-icon {
+    display: flex;
+  }
+  .show-list {
+    display: flex;
   }
 } ;
