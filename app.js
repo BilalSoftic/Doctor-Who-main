@@ -1,3 +1,22 @@
+const doctors = [
+  {
+    id: 1,
+    img: "./image/doctor-images/first-doctor",
+    header: "the 1st doctor",
+    actor: "William Hartnell",
+    years: "1963-1966",
+    series: "4",
+  },
+  {
+    id: 2,
+    img: "./image/doctor-images/second-doctor",
+    header: "the 2nd doctor",
+    actor: " Patrick Troughton",
+    years: "1966-1969",
+    series: "3",
+  },
+];
+
 // ===variables===
 const artBtns = document.querySelectorAll(".art-btn");
 const bars = document.querySelector(".bars-icon");
@@ -29,3 +48,6 @@ window.addEventListener("scroll", function () {
 bars.addEventListener("click", function () {
   navbar.classList.toggle("show-list");
 });
+
+// ===display article elements===
+window.addEventListener("DOMContentLoaded", function () {});
