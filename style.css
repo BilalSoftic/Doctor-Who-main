@@ -206,6 +206,7 @@ main {
 
 .container-center {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   max-width: 900px;
 }
@@ -222,6 +223,7 @@ main {
 }
 
 .art-image {
+  min-height: 15rem;
   border-radius: 1.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -305,7 +307,7 @@ p {
   margin-top: 3.75rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 860px) {
   .container-center {
     flex-direction: column;
   }
