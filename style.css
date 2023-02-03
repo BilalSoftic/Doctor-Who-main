@@ -214,7 +214,7 @@ main {
 .art-container {
   box-sizing: border-box;
   background-color: var(--clr-accent-300);
-  min-width: 25rem;
+  max-width: 25rem;
   margin: 0.625rem;
   padding: 1.5rem;
   border-radius: 1.5rem;
