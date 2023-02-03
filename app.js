@@ -140,6 +140,7 @@ const doctors = [
 const bars = document.querySelector(".bars-icon");
 const navbar = document.querySelector(".nav");
 const displayContainer = document.querySelector(".container-center");
+const bttBtn = document.querySelector(".btt");
 
 // ===display article elements===
 window.addEventListener("DOMContentLoaded", function () {
@@ -151,8 +152,6 @@ window.addEventListener("DOMContentLoaded", function () {
 // if navbar height changes the condition also changes
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector("nav");
-  // const offset = navbar.offsetTop;
-  // console.log(offset);
   if (window.scrollY > 143) {
     navbar.classList.add("fixed");
   } else {
@@ -174,6 +173,10 @@ function dropdownMenu() {
     });
   });
 }
+// back to top
+bttBtn.addEventListener("click", function () {
+  document.documentElement.scrollTop = 0;
+});
 // ===display articles===
 function displayArticles(arr) {
   const displayItems = arr
