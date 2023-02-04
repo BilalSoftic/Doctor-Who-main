@@ -5,7 +5,7 @@ const doctors = [
     header: "the 1st doctor",
     actor: "William Hartnell",
     years: "1963-1966",
-    series: "4",
+    seasons: "4",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -14,7 +14,7 @@ const doctors = [
     header: "the 2nd doctor",
     actor: " Patrick Troughton",
     years: "1966-1969",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -23,7 +23,7 @@ const doctors = [
     header: "the 3rd doctor",
     actor: "Jon Pertwee",
     years: "1970-1974",
-    series: "5",
+    seasons: "5",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -32,7 +32,7 @@ const doctors = [
     header: "the 4th doctor",
     actor: "Tom Baker",
     years: "1974-1981",
-    series: "7",
+    seasons: "7",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -41,7 +41,7 @@ const doctors = [
     header: "the 5th doctor",
     actor: "Peter Davison",
     years: "1982-1984",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -50,7 +50,7 @@ const doctors = [
     header: "the 6th doctor",
     actor: "Colin Baker",
     years: "1984-1986",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -59,7 +59,7 @@ const doctors = [
     header: "the 7th doctor",
     actor: "Sylvester McCoy",
     years: "1987-1989",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -68,7 +68,7 @@ const doctors = [
     header: "the 8th doctor",
     actor: "Paul McGann",
     years: "1966",
-    series: "0",
+    seasons: "0",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -77,7 +77,7 @@ const doctors = [
     header: "the 9th doctor",
     actor: "Christopher Eccleston",
     years: "2005",
-    series: "1",
+    seasons: "1",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -86,7 +86,7 @@ const doctors = [
     header: "the 10th doctor",
     actor: "David Tennant",
     years: "2005-2010",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -95,7 +95,7 @@ const doctors = [
     header: "the 11th doctor",
     actor: "Matt Smith",
     years: "2010-2013",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -104,7 +104,7 @@ const doctors = [
     header: "the 12th doctor",
     actor: "Peter Capaldi",
     years: "2014-2017",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -113,7 +113,7 @@ const doctors = [
     header: "the 13th doctor",
     actor: "Jodie Whittaker",
     years: "2018-2022",
-    series: "3",
+    seasons: "3",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -122,7 +122,7 @@ const doctors = [
     header: "the 14th doctor",
     actor: "David Tennant",
     years: "2023",
-    series: "1",
+    seasons: "1",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
   {
@@ -131,7 +131,7 @@ const doctors = [
     header: "the 15th doctor",
     actor: "Ncuti Gatwa",
     years: "2023-Unknown",
-    series: "Unknown",
+    seasons: "Unknown",
     text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!",
   },
 ];
@@ -140,7 +140,7 @@ const doctors = [
 const bars = document.querySelector(".bars-icon");
 const navbar = document.querySelector(".nav");
 const displayContainer = document.querySelector(".container-center");
-const bttBtn = document.querySelector(".btt");
+const bttBtn = document.querySelector(".btt-btn");
 
 // ===display article elements===
 window.addEventListener("DOMContentLoaded", function () {
@@ -202,7 +202,7 @@ function displayArticles(arr) {
   <div class="art-content">
   <h2 class="actor-name">${item.actor}</h2>
   <h2 class="time">${item.years}</h2>
-  <h2>no. of series: <span id="series-nmbr">${item.series}</span></h2>
+  <h2>no. of seasons: <span id="series-nmbr">${item.seasons}</span></h2>
   <div class="underline"></div>
   <p>
   ${item.text}
