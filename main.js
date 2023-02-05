@@ -144,8 +144,9 @@ const bttBtn = document.querySelector(".btt-btn");
 
 // ===display article elements===
 window.addEventListener("DOMContentLoaded", function () {
-  displayArticles(doctors);
   dropdownMenu();
+  displayArticles(doctors);
+  dropdownText();
 });
 
 // ===fixed navbar===
@@ -163,7 +164,9 @@ function dropdownMenu() {
   bars.addEventListener("click", function () {
     navbar.classList.toggle("show-list");
   });
-  // ===dropdown text===
+}
+// ===dropdown text===
+function dropdownText() {
   const artBtns = document.querySelectorAll(".art-btn");
   artBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
@@ -173,6 +176,7 @@ function dropdownMenu() {
     });
   });
 }
+
 // back to top
 bttBtn.addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
@@ -181,7 +185,7 @@ bttBtn.addEventListener("click", function () {
 function displayArticles(arr) {
   const displayItems = arr
     .map(function (item) {
-      return `<div class="art-container" id="1">
+      return `<div class="art-container" id=${item.id}>
     <img
     src=${item.img}
     alt="doctor-image"
