@@ -140,12 +140,14 @@ const doctors = [
 const bars = document.querySelector(".bars-icon");
 const navbar = document.querySelector(".nav");
 const displayContainer = document.querySelector(".container-center");
+const filterBtns = document.querySelectorAll(".filter-btn");
 const bttBtn = document.querySelector(".btt-btn");
 
 // ===display article elements===
 window.addEventListener("DOMContentLoaded", function () {
   dropdownMenu();
   displayArticles(doctors);
+
   dropdownText();
 });
 
@@ -198,23 +200,46 @@ function displayArticles(arr) {
     <span class="down-icon"
     ><i class="fa-solid fa-chevron-down"></i
     ></span>
-  <span class="up-icon"
-  ><i class="fa-solid fa-chevron-up"></i
-      ></span>
-      </button>
-      </div>
-  <div class="art-content">
-  <h2 class="actor-name">${item.actor}</h2>
-  <h2 class="time">${item.years}</h2>
-  <h2>no. of seasons: <span id="series-nmbr">${item.seasons}</span></h2>
-  <div class="underline"></div>
-  <p>
-  ${item.text}
-  </p>
-  </div>
-  </div>`;
+    <span class="up-icon"
+    ><i class="fa-solid fa-chevron-up"></i
+    ></span>
+    </button>
+    </div>
+    <div class="art-content">
+    <h2 class="actor-name">${item.actor}</h2>
+    <h2 class="time">${item.years}</h2>
+    <h2>no. of seasons: <span id="series-nmbr">${item.seasons}</span></h2>
+    <div class="underline"></div>
+    <p>
+    ${item.text}
+    </p>
+    </div>
+    </div>`;
     })
     .join("");
 
   displayContainer.innerHTML = displayItems;
 }
+
+// filter
+
+filterBtns.forEach(function (btn) {
+  const oldDoctors = doctors.filter(function (item) {
+    if (item.id <= 7) {
+      return item;
+    }
+  });
+  const newDoctors = doctors.filter(function (item) {
+    if (item.id > 8) {
+      return item;
+    }
+  });
+  btn.addEventListener("click", function (e) {
+    const category = e.currentTarget.classList;
+    if (category.contains("btn-1")) {
+      displayArticles(oldDoctors);
+    } else {
+      displayArticles(newDoctors);
+    }
+  });
+});
