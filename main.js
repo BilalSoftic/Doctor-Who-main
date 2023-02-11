@@ -72,7 +72,7 @@ function displayArticles(arr) {
     <div class="art-content">
     <h2 class="actor-name">${item.actor}</h2>
     <h2 class="time">${item.years}</h2>
-    <h2>no. of seasons: <span id="series-nmbr">${item.seasons}</span></h2>
+    <h2>no. of seasons: <span id="series-number">${item.seasons}</span></h2>
     <div class="underline"></div>
     <p>
     ${item.text}
