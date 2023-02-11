@@ -12,6 +12,7 @@ const bars = document.querySelector(".bars-icon"),
 // ===display article elements===
 window.addEventListener("DOMContentLoaded", function () {
   dropdownMenu();
+  filter();
   displayArticles(doctors);
   dropdownText();
 });
@@ -86,41 +87,44 @@ function displayArticles(arr) {
 }
 
 // filter
+function filter() {
+  filterBtns.forEach(function (btn) {
+    const oldDoctors = doctors.filter(function (item) {
+      if (item.id <= 7) {
+        return item;
+      }
+    });
 
-filterBtns.forEach(function (btn) {
-  // const oldDoctors = doctors.filter(function (item) {
-  //   if (item.id <= 7) {
-  //     return item;
-  //   }
-  // });
+    const newDoctors = doctors.filter(function (item) {
+      if (item.id > 8) {
+        return item;
+      }
+    });
 
-  // const newDoctors = doctors.filter(function (item) {
-  //   if (item.id > 8) {
-  //     return item;
-  //   }
-  // });
+    // Arrow functions
+    // const oldDoctors = doctors.filter((item) => item.id <= 7);
+    // const newDoctors = doctors.filter((item) => item.id > 8);
 
-  // Arrow functions
-  const oldDoctors = doctors.filter((item) => item.id <= 7);
-  const newDoctors = doctors.filter((item) => item.id > 8);
+    btn.addEventListener("click", function (e) {
+      const category = e.currentTarget.classList;
+      if (category.contains("btn-1")) {
+        displayArticles(oldDoctors);
+        dropdownText(oldDoctors);
+      } else {
+        displayArticles(newDoctors);
+        dropdownText(newDoctors);
+      }
+    });
 
-  // btn.addEventListener("click", function (e) {
-  //   const category = e.currentTarget.classList;
-  //   if (category.contains("btn-1")) {
-  //     displayArticles(oldDoctors);
-  //   } else {
-  //     displayArticles(newDoctors);
-  //   }
-  // });
+    // btn.addEventListener("click", (e) => {
+    //   const category = e.currentTarget.classList;
 
-  btn.addEventListener("click", (e) => {
-    const category = e.currentTarget.classList;
+    //   category.contains("btn-1") && displayArticles(oldDoctors);
 
-    category.contains("btn-1") && displayArticles(oldDoctors);
-
-    // TERNARY OPERATOR
-    category.contains("btn-1")
-      ? displayArticles(oldDoctors)
-      : displayArticles(newDoctors);
+    //   // TERNARY OPERATOR
+    //   category.contains("btn-1")
+    //     ? displayArticles(oldDoctors)
+    //     : displayArticles(newDoctors);
+    // });
   });
-});
+}
