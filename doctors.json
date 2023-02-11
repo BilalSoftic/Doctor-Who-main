@@ -6,7 +6,7 @@
       "header": "the 1st doctor",
       "actor": "William Hartnell",
       "years": "1963-1966",
-      "seasons": "4",
+      "seasons": 4,
       "text": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!"
     },
     {
@@ -15,7 +15,7 @@
       "header": "the 2nd doctor",
       "actor": " Patrick Troughton",
       "years": "1966-1969",
-      "seasons": "3",
+      "seasons": 3,
       "text": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum veniam eaque nobis laborum quisquam, sunt perspiciatis illo sed adipisci aspernatur vero earum dolorem ex voluptas excepturi eligendi corrupti dolorum, sint accusantium. Enim, necessitatibus dignissimos consequatur explicabo quae nobis similique beatae ullam velit earum quaerat unde fugiat, eveniet, tempora quibusdam!"
     },
     {
