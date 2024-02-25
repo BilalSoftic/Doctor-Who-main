@@ -1,13 +1,13 @@
-import doctorsJson from "./doctors.json" assert { type: "json" };
+import doctorsJson from './doctors.json' assert { type: 'json' };
 const info = [...doctorsJson.aboutDoctors];
 
 // ===variables===
-const bars = document.querySelector(".bars-icon");
-const navbar = document.querySelector(".nav");
-const bttBtn = document.querySelector(".btt-btn");
-const aboutContainer = document.querySelector(".about-container");
+const bars = document.querySelector('.bars-icon');
+const navbar = document.querySelector('.nav');
+const bttBtn = document.querySelector('.btt-btn');
+const aboutContainer = document.querySelector('.about-container');
 // ===display article elements===
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('DOMContentLoaded', function () {
   dropdownMenu();
   displayAboutArticles(info);
   dropdownText();
@@ -15,33 +15,33 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // ===fixed navbar===
 // if navbar height changes the condition also changes
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector("nav");
+window.addEventListener('scroll', function () {
+  const navbar = document.querySelector('nav');
   if (window.scrollY > 143) {
-    navbar.classList.add("fixed");
+    navbar.classList.add('fixed');
   } else {
-    navbar.classList.remove("fixed");
+    navbar.classList.remove('fixed');
   }
 });
 // ===dropdown menu===
 function dropdownMenu() {
-  bars.addEventListener("click", function () {
-    navbar.classList.toggle("show-list");
+  bars.addEventListener('click', function () {
+    navbar.classList.toggle('show-list');
   });
 }
 // ===dropdown text===
 function dropdownText() {
-  const artBtns = document.querySelectorAll(".art-btn");
+  const artBtns = document.querySelectorAll('.art-btn');
   artBtns.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
+    btn.addEventListener('click', function (e) {
       const artContainer = e.currentTarget.parentElement.parentElement;
-      artContainer.classList.toggle("show-text");
+      artContainer.classList.toggle('show-text');
       console.log(btn);
     });
   });
 }
 // back to top
-bttBtn.addEventListener("click", function () {
+bttBtn.addEventListener('click', function () {
   document.documentElement.scrollTop = 0;
 });
 // ===display about articles===
@@ -60,6 +60,6 @@ function displayAboutArticles(arr) {
       ${item.text}
     </div>`;
     })
-    .join("");
+    .join('');
   aboutContainer.innerHTML = displayItems;
 }
