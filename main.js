@@ -1,16 +1,16 @@
-import doctorsJson from "./doctors.json" assert { type: "json" };
+import doctorsJson from './doctors.json' assert { type: 'json' };
 
 const doctors = [...doctorsJson.mainDoctors];
 
 // ===html elements===
-const bars = document.querySelector(".bars-icon"),
-  navbar = document.querySelector(".nav"),
-  displayContainer = document.querySelector(".container-center"),
-  filterBtns = document.querySelectorAll(".filter-btn"),
-  bttBtn = document.querySelector(".btt-btn");
+const bars = document.querySelector('.bars-icon'),
+  navbar = document.querySelector('.nav'),
+  displayContainer = document.querySelector('.container-center'),
+  filterBtns = document.querySelectorAll('.filter-btn'),
+  bttBtn = document.querySelector('.btt-btn');
 
 // ===display article elements===
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('DOMContentLoaded', function () {
   dropdownMenu();
   // filter();
   displayArticles(doctors);
@@ -19,33 +19,33 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // ===fixed navbar===
 // if navbar height changes the condition also changes
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector("nav");
+window.addEventListener('scroll', function () {
+  const navbar = document.querySelector('nav');
   if (window.scrollY > 143) {
-    navbar.classList.add("fixed");
+    navbar.classList.add('fixed');
   } else {
-    navbar.classList.remove("fixed");
+    navbar.classList.remove('fixed');
   }
 });
 // ===dropdown menu===
 function dropdownMenu() {
-  bars.addEventListener("click", function () {
-    navbar.classList.toggle("show-list");
+  bars.addEventListener('click', function () {
+    navbar.classList.toggle('show-list');
   });
 }
 // ===dropdown text===
 function dropdownText() {
-  const artBtns = document.querySelectorAll(".art-btn");
+  const artBtns = document.querySelectorAll('.art-btn');
   artBtns.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
+    btn.addEventListener('click', function (e) {
       const artContainer = e.currentTarget.parentElement.parentElement;
-      artContainer.classList.toggle("show-text");
+      artContainer.classList.toggle('show-text');
     });
   });
 }
 
 // back to top
-bttBtn.addEventListener("click", function () {
+bttBtn.addEventListener('click', function () {
   document.documentElement.scrollTop = 0;
 });
 // ===display articles===
@@ -81,33 +81,18 @@ function displayArticles(arr) {
     </div>
     </div>`;
     })
-    .join("");
+    .join('');
 
   displayContainer.innerHTML = displayItems;
 }
-
-// filter
-// function filter() {
-//   filterBtns.forEach(function (btn) {
-//     const oldDoctors = doctors.filter(function (item) {
-//       if (item.id <= 7) {
-//         return item;
-//       }
-//     });
-
-// const newDoctors = doctors.filter(function (item) {
-//   if (item.id > 8) {
-//     return item;
-//   }
-// });
 
 const oldDoctors = doctors.filter((item) => item.id <= 7);
 const newDoctors = doctors.filter((item) => item.id > 8);
 
 filterBtns.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
+  btn.addEventListener('click', (e) => {
     const category = e.currentTarget.classList;
-    if (category.contains("btn-1")) {
+    if (category.contains('btn-1')) {
       displayArticles(oldDoctors);
       dropdownText(oldDoctors);
     } else {
@@ -116,19 +101,3 @@ filterBtns.forEach((btn) => {
     }
   });
 });
-
-// filterBtns.forEach(function (btn) {
-//   btn.addEventListener("click", (e) => {
-//     const category = e.currentTarget.classList;
-
-//     category.contains("btn-1") && displayArticles(oldDoctors);
-
-//     // TERNARY OPERATOR
-//     category.contains("btn-1")
-//       ? displayArticles(oldDoctors)
-//       : displayArticles(newDoctors) ;
-//   });
-// });
-
-// });
-// }
